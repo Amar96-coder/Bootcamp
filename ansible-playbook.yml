@@ -2,7 +2,7 @@
 - hosts: all # comes from the hosts file
   become: true # become sudo
   gather_facts: false # save time and not gather info
-  env:
+  environment:
     ANSIBLE_HOST_KEY_CHECKING: false
 
   tasks:
